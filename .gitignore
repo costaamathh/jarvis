@@ -1,0 +1,23 @@
+# Next/Node
+node_modules/
+.next/
+out/
+dist/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Claude / arquivos auxiliares
+.claude/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
