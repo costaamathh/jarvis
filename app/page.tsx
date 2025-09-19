@@ -6,7 +6,28 @@ import Link from "next/link";
 import { MessageSquare, CheckSquare, Bell, KanbanSquare, Target, FileText, Check, Quote, ChevronDown, ListTodo } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import YouTubeEmbed from "@/components/YouTubeEmbed";
+
+function YouTubeEmbedJarvis() {
+  const videoId = "YxtW3eC76KE";
+  const src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&loop=1&playlist=${videoId}&controls=1&rel=0&modestbranding=1`;
+
+  return (
+    <div className="relative w-full max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      {/* fallback de proporção 16:9 confiável, independente do Tailwind */}
+      <div style={{ position: "relative", width: "100%", paddingTop: "56.25%" }}>
+        <iframe
+          className="absolute inset-0 w-full h-full"
+          src={src}
+          title="Jarvis — Demo Oficial"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function Page() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -271,7 +292,7 @@ export default function Page() {
               </motion.p>
 
               <motion.div variants={fadeUpSection}>
-                <YouTubeEmbed className="max-w-4xl mx-auto" />
+                <YouTubeEmbedJarvis />
               </motion.div>
             </motion.div>
           </div>
