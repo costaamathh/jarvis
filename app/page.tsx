@@ -269,20 +269,15 @@ export default function Page() {
                 Demo curta mostrando o fluxo principal.
               </motion.p>
 
-              <motion.div
-                className="glass p-6 max-w-6xl mx-auto"
-                variants={fadeUpSection}
-              >
-                <div className="relative aspect-video overflow-hidden" style={{ borderRadius: '20px' }}>
-                  <video
-                    src="/demo.mp4"
-                    className="w-full h-full object-cover"
-                    muted
-                    playsInline
-                    controls
-                    poster="/hero.png"
-                  />
-                </div>
+              <motion.div variants={fadeUpSection}>
+                <video
+                  src="/demo.mp4"
+                  className="w-full max-w-4xl mx-auto rounded-xl shadow-lg aspect-video"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                />
               </motion.div>
             </motion.div>
           </div>
