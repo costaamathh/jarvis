@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MessageSquare, CheckSquare, Bell, KanbanSquare, Target, FileText, Check, Quote, ChevronDown, ListTodo } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function Page() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -270,14 +271,7 @@ export default function Page() {
               </motion.p>
 
               <motion.div variants={fadeUpSection}>
-                <video
-                  src="/demo.mp4"
-                  className="w-full max-w-4xl mx-auto rounded-xl shadow-lg aspect-video"
-                  controls
-                  autoPlay
-                  loop
-                  muted
-                />
+                <YouTubeEmbed className="max-w-4xl mx-auto" />
               </motion.div>
             </motion.div>
           </div>

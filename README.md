@@ -38,7 +38,7 @@ jarvis-landing/
 │   └── utils.ts            # Utilitários
 ├── public/
 │   ├── hero.png           # Placeholder - substitua pela imagem real
-│   ├── demo.mp4           # Placeholder - substitua pelo vídeo real
+│   ├── demo.mp4           # (Não usado) - agora usa YouTube embed
 │   ├── notion1.png        # Placeholder - substitua pela screenshot
 │   └── notion2.png        # Placeholder - substitua pela screenshot
 └── ...arquivos de config
@@ -50,7 +50,7 @@ jarvis-landing/
 Substitua os arquivos placeholder em `/public/` pelos seus assets reais:
 
 - `hero.png` - Imagem do hero
-- `demo.mp4` - Vídeo de demonstração
+- `demo.mp4` - (Não usado) - vídeo agora via YouTube embed
 - `notion1.png` - Screenshot do template Notion
 - `notion2.png` - Screenshot do template Notion
 
